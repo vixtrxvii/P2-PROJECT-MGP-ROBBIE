@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: gotham;
+}
+
+@font-face {
+  font-family: gotham;
+  src: url(fonts);
+}
+
+:root {
+  --color-primary: #0F1939;
+  --color-secondary: #222222;
+  --color-tertiary: #EDEDED;
+  --font-book: 400;
+  --font-medium: 500;
+  --font-bold: 700;
+  --font-black: 900;
+}
+
+body {
+  background-color: var(--color-primary);
+  color: var(--color-tertiary);
+  width: 100vw;
+}
+
+nav {
+  width: 100vw;
+  height: 12vh;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  font-weight: var(--font-gotham-bold);
+  color: var(--color-tertiary);
+}
+
+nav a {
+  color: var(--color-tertiary);
+  text-decoration: none;
+}
+
+.nav__logo {
+  width: 5.5rem;
+  height: 5.5rem;
+}
+
+.nav__main-items {
+  height: 12vh;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  font-weight: var(--font-bold);
+}
+
+.nav__main-item {
+  color: var(--color-tertiary);
+}
+
+.nav__main-item__dropdown > div {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.nav__contact {
+  width: 9rem;
+  height: 3rem;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-flow: row wrap;
+  border-radius: 1rem;
+  background-color: var(--color-tertiary);
+}
+
+.nav__contact__icon {
+  margin-right: 0.3rem;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.nav__contact > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+  width: 9rem;
+  color: var(--color-primary);
+  font-size: 0.9rem;
+  font-weight: var(--font-bold);
+}
+
+/*home page header*/
+
+.hero {
+  width: 100vw;
+  height: 35rem;
+  display: flex;
+  background-image: url(img/header\ pic.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero__text {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  color: var(--color-tertiary);
+  margin-left: 4.06rem;
+  margin-bottom: 4.06rem;
+}
+
+.hero__text > h1 {
+  font-size: 2.7rem;
+  font-weight: var(--font-black);
+  margin-bottom: 2px;
+  text-shadow: 1px 1px 1px var(--color-primary);
+}
+
+.hero__text > p {
+  font-size: 1.3rem;
+  font-weight: var(--font-book);
+  margin-bottom: 1.8rem;
+  text-shadow: 1px 1px 1px var(--color-primary);
+}
+
+.hero__text > button {
+  width: 9.5rem;
+  height: 2.8rem;
+  border-radius: 62.5rem;
+  border-style: none;
+  background-color: var(--color-tertiary);
+}
+
+.hero__text > button > a {
+  text-decoration: none;
+  color: var(--color-primary);
+  font-size: 0.95rem;
+  font-family: gotham;
+  font-weight: var(--font-bold);
+}
+
+/*home page 2023 participants section*/
+
+.entries__cards {
+  width: 100vw;
+  height: 20rem;
+  display: flex;
+  flex-direction: row;
+  margin-block: 5.625rem;
+  padding-inline: 2rem;
+  gap: 1.5rem;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.entries__container > h1 {
+  margin: 2rem 0rem -3.5rem 2rem;
+  font-weight: var(--font-black);
+}
+
+.entry__card {
+  width: 23rem;
+  height: 13rem;
+  cursor: pointer;
+}
+
+.entry__card > a {
+  text-decoration: none;
+}
+
+.entry__img {
+  filter: brightness(96%);
+  width: 23rem;
+  height: auto;
+  border-radius: 1.56rem 1.56rem 0rem 0rem;
+}
+
+.entry__info {
+  position: relative;
+  margin-top: -1.25rem;
+  width: 23rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-left: 1.5625rem;
+  height: 3.125rem;
+  background-color: var(--color-tertiary);
+  border-radius: 0rem 0rem 1.56rem 1.56rem;
+  color: var(--color-secondary);
+}
+
+.entry__title {
+  font-size: 0.9375rem;
+  font-weight: var(--font-bold);
+}
+
+.entry__artist {
+  font-size: 0.9375rem;
+  font-weight: var(--font-book);
+}
+
+/*home page winners section*/
+
+.winners__cards {
+  width: 100vw;
+  height: 20rem;
+  display: flex;
+  flex-direction: row;
+  margin-block: 5.625rem;
+  padding-inline: 2rem;
+  gap: 1.5rem;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.winners__container > h1 {
+  margin: 2rem 0rem -3.5rem 2rem;
+  font-weight: var(--font-black);
+}
+
+.winner__card {
+  width: 23rem;
+  height: 13rem;
+}
+
+.winner__card > a {
+  text-decoration: none;
+}
+
+.winner__img {
+  filter: brightness(96%);
+  width: 23rem;
+  height: auto;
+  border-radius: 1.56rem 1.56rem 0rem 0rem;
+}
+
+.winner__info {
+  position: relative;
+  margin-top: -1.25rem;
+  width: 23rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-left: 1.5625rem;
+  height: 3.125rem;
+  background-color: var(--color-tertiary);
+  border-radius: 0rem 0rem 1.56rem 1.56rem;
+  color: var(--color-secondary);
+}
+
+.winner__title {
+  font-size: 0.9375rem;
+  font-weight: var(--font-bold);
+}
+
+.winner__artist {
+  font-size: 0.9375rem;
+  font-weight: var(--font-book);
+}
+
+.winner__year {
+  position: absolute;
+  right: 1.5rem;
+  justify-content: flex-end;
+  font-size: 0.9375rem;
+  font-weight: var(--font-bold);
+}
